@@ -49,6 +49,6 @@ function DollarToCedis(currency){
 function CedisToNaira(currency){
     return  currency / NAIRA;
 }
-function NiaraToCedis(currency){
+function NairaToCedis(currency){
     return  currency * NAIRA;
 }
