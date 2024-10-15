@@ -9,7 +9,7 @@ document.getElementById("calculate").onclick= function(){
         currency = cedisToDollar(currency);
         document.getElementById("display").innerHTML = currency.toFixed(2) + " $"
     }
-  else  if(document.getElementById("cd").checked){
+  else  if(document.getElementById("dc").checked){
         currency = document.getElementById("textfield").value;
         currency = Number(currency);
         currency = DollarToCedis(currency);
@@ -36,7 +36,7 @@ catch(error){
     document.getElementById("display").innerHTML = "User input must me value/Number"
 }
 }
-// currency conversion fucntions
+// currency conversion functions
 function cedisToDollar(currency){
     return  currency/DOLLAR;
 
@@ -49,6 +49,6 @@ function DollarToCedis(currency){
 function CedisToNaira(currency){
     return  currency / NAIRA;
 }
-function CedisToNaira(currency){
+function NiaraToCedis(currency){
     return  currency * NAIRA;
 }
